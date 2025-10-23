@@ -1,306 +1,311 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>이재명 대표와 함께하는 타이베이 힐링 여행</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Noto Sans KR', sans-serif; background-color: #f8f9fa; color: #333; }
-        /* '중국풍' 원본 배경 이미지 유지 */
-        .hero-bg { background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; } 
-        .nav-link { transition: color 0.3s, border-bottom-color 0.3s; }
-        .nav-link:hover, .nav-link.active { color: #c05621; border-bottom-color: #c05621; } 
-        .tab-btn { transition: background-color 0.3s, color 0.3s, border-color 0.3s; }
-        .tab-btn.active { background-color: #a0410d; color: white; border-color: #a0410d; }
-        .timeline-item::before { content: ''; position: absolute; left: 11px; top: 12px; bottom: -12px; width: 2px; background-color: #e2e8f0; }
-        .timeline-item:last-child::before { display: none; }
-        .timeline-dot { position: absolute; left: 0; top: 12px; width: 24px; height: 24px; border-radius: 50%; background-color: white; border: 4px solid #a0410d; }
-        html { scroll-behavior: smooth; }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이재명 대표와 함께하는 타이베이 힐링 여행</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans KR', sans-serif; background-color: #f8f9fa; color: #333; }
+        .hero-bg { background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; } 
+        .nav-link { transition: color 0.3s, border-bottom-color 0.3s; }
+        .nav-link:hover, .nav-link.active { color: #c05621; border-bottom-color: #c05621; } 
+        .tab-btn { transition: background-color 0.3s, color 0.3s, border-color 0.3s; }
+        .tab-btn.active { background-color: #a0410d; color: white; border-color: #a0410d; }
+        .timeline-item::before { content: ''; position: absolute; left: 11px; top: 12px; bottom: -12px; width: 2px; background-color: #e2e8f0; }
+        .timeline-item:last-child::before { display: none; }
+        .timeline-dot { position: absolute; left: 0; top: 12px; width: 24px; height: 24px; border-radius: 50%; background-color: white; border: 4px solid #a0410d; }
+        html { scroll-behavior: smooth; }
+    </style>
 </head>
 <body class="antialiased">
-    <header class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50">
-        <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <div class="flex-shrink-0">
-                    <h1 class="text-xl font-bold text-gray-800">투어메이커</h1>
-                </div>
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="#home" class="nav-link px-3 py-2 text-sm font-medium border-b-2 border-transparent">여행 소개</a>
-                        <a href="#concept" class="nav-link px-3 py-2 text-sm font-medium border-b-2 border-transparent">우리의 약속</a>
-                        <a href="#highlight" class="nav-link px-3 py-2 text-sm font-medium border-b-2 border-transparent">핵심 하이라이트</a>
-                        <a href="#timeline" class="nav-link px-3 py-2 text-sm font-medium border-b-2 border-transparent">전체 일정</a>
-                        <a href="#about-taiwan" class="nav-link px-3 py-2 text-sm font-medium border-b-2 border-transparent">대만 정보</a>
-                        <a href="#checklist" class="nav-link px-3 py-2 text-sm font-medium border-b-2 border-transparent">준비물</a>
-                        <a href="#contact" class="nav-link px-3 py-2 text-sm font-medium border-b-2 border-transparent">인솔자 정보</a>
-                    </div>
-                </div>
-            </div>
-    </header>
+    <header class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                
+                <div class="flex-shrink-0 flex items-center">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHfgIX70O5k6Anuo0UgALIdaG9jSga9auHu3uyz0uEirylGPAJnjN_qQbvEGMUvPqUQf_g9FMNUHRxlDcUBf4vZ3Mpy4TnA9WxbmzWYK11gt2zuy_Irl4wctNFjcjLyPo0GPXV792o_J7L9guRMuDfeC1gy7USwywjYbECZgzcsHybuGRRAXAnO1eNmP8/s320/logo.png" 
+                         alt="투어메이커 로고" class="h-8 mr-2">
+                                        <h1 class="text-xl font-bold text-gray-800">투어메이커</h1>
+                </div>
+                                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="nav-link px-3 py-2 text-sm font-medium border-b-2 border-transparent">여행 소개</a>
+                        <a href="#concept" class="nav-link px-3 py-2 text-sm font-medium border-b-2 border-transparent">우리의 약속</a>
+                        <a href="#highlight" class="nav-link px-3 py-2 text-sm font-medium border-b-2 border-transparent">핵심 하이라이트</a>
+                        <a href="#timeline" class="nav-link px-3 py-2 text-sm font-medium border-b-2 border-transparent">전체 일정</a>
+                        <a href="#about-taiwan" class="nav-link px-3 py-2 text-sm font-medium border-b-2 border-transparent">대만 정보</a>
+                        <a href="#checklist" class="nav-link px-3 py-2 text-sm font-medium border-b-2 border-transparent">준비물</a>
+                        <a href="#contact" class="nav-link px-3 py-2 text-sm font-medium border-b-2 border-transparent">인솔자 정보</a>
+                    </div>
+                </div>
+            </div>
+    </header>
 
-    <main>
-        <section id="home" class="hero-bg text-white text-center flex items-center justify-center min-h-screen -mt-16">
-            <div class="container mx-auto px-4">
-                <p class="text-xl font-semibold">이재명 대표가 '내 가족처럼' 모십니다</p>
-                <h1 class="text-5xl md:text-6xl font-black mt-4 leading-tight">타이베이 4박 5일,<br>쉼과 품격이 있는 힐링 여행</h1>
-                <div class="mt-8 max-w-3xl mx-auto bg-black/60 p-6 rounded-lg">
-                    <h2 class="text-2xl font-bold mb-4">여행 기간</h2>
-                    <p class="text-lg">2025년 10월 27일 (월) ~ 10월 31일 (금) (4박 5일)</p>
-                </div>
-                <p class="mt-8 text-xl font-medium">60대 이상 어르신을 위한, 강행군 없는 편안한 여정</p>
-            </div>
-        </section>
+    <main>
+        <section id="home" class="hero-bg text-white text-center flex items-center justify-center min-h-screen -mt-16">
+            <div class="container mx-auto px-4">
+                <p class="text-xl font-semibold">이재명 대표가 '내 가족처럼' 모십니다</p>
+                <h1 class="text-5xl md:text-6xl font-black mt-4 leading-tight">타이베이 4박 5일,<br>쉼과 품격이 있는 힐링 여행</h1>
+                <div class="mt-8 max-w-3xl mx-auto bg-black/60 p-6 rounded-lg">
+                    <h2 class="text-2xl font-bold mb-4">여행 기간</h2>
+                    <p class="text-lg">2025년 10월 27일 (월) ~ 10월 31일 (금) (4박 5일)</p>
+                </div>
+                <p class="mt-8 text-xl font-medium">60대 이상 어르신을 위한, 강행군 없는 편안한 여정</p>
+            </div>
+        </section>
 
-        <section id="concept" class="py-16 md:py-24 bg-white">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">왜 투어메이커의 '대표 직영' 여행인가?</h2>
-                <p class="text-center text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
-                    "패키지는 끌려다녀서 힘들고, 자유여행은 불안하고...<br>
-                    투어메이커는 그 중간의 '가장 편안하고 품격 있는' 지점을 찾았습니다."
-                </p>
-                <div class="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="bg-orange-50 p-6 rounded-lg border border-orange-200">
-                        <h3 class="text-xl font-bold text-orange-800 mb-3">① 대표 직영 인솔</h3>
-                        <p class="text-gray-700">여행사 대표(이재명)가 전 일정을 '내 가족처럼' 동행하며 모든 돌발상황과 필요를 즉각 케어합니다.</p>
-                    </div>
-                    <div class="bg-orange-50 p-6 rounded-lg border border-orange-200">
-                        <h3 class="text-xl font-bold text-orange-800 mb-3">② 시니어 맞춤 일정</h3>
-                        <p class="text-gray-700">하루 핵심 2~3곳, 점심 후 호텔 휴식. 60대 이상 어르신들의 컨디션을 최우선으로 고려한 여유로운 동선입니다.</p>
-                    </div>
-                    <div class="bg-orange-50 p-6 rounded-lg border border-orange-200">
-                        <h3 class="text-xl font-bold text-orange-800 mb-3">③ 비교 불가한 '편안함'</h3>
-                        <p class="text-gray-700">NO 쇼핑, NO 옵션. 쾌적한 전용 차량과 택시 이동으로 어르신들의 무릎을 아껴드립니다.</p>
-                    </div>
-                     <div class="bg-orange-50 p-6 rounded-lg border border-orange-200">
-                        <h3 class="text-xl font-bold text-orange-800 mb-3">④ 검증된 '품격'</h3>
-                        <p class="text-gray-700">5성급 시저 메트로 호텔, 딘타이펑/호텔 뷔페 등 엄선된 숙소와 식사를 제공합니다.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <section id="concept" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">왜 투어메이커의 '대표 직영' 여행인가?</h2>
+                <p class="text-center text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+                    "패키지는 끌려다녀서 힘들고, 자유여행은 불안하고...<br>
+                    투어메이커는 그 중간의 '가장 편안하고 품격 있는' 지점을 찾았습니다."
+                </p>
+                <div class="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-orange-50 p-6 rounded-lg border border-orange-200">
+                        <h3 class="text-xl font-bold text-orange-800 mb-3">① 대표 직영 인솔</h3>
+                        <p class="text-gray-700">여행사 대표(이재명)가 전 일정을 '내 가족처럼' 동행하며 모든 돌발상황과 필요를 즉각 케어합니다.</p>
+                    </div>
+                    <div class="bg-orange-50 p-6 rounded-lg border border-orange-200">
+                        <h3 class="text-xl font-bold text-orange-800 mb-3">② 시니어 맞춤 일정</h3>
+                        <p class="text-gray-700">하루 핵심 2~3곳, 점심 후 호텔 휴식. 60대 이상 어르신들의 컨디션을 최우선으로 고려한 여유로운 동선입니다.</p>
+                    </div>
+                    <div class="bg-orange-50 p-6 rounded-lg border border-orange-200">
+                        <h3 class="text-xl font-bold text-orange-800 mb-3">③ 비교 불가한 '편안함'</h3>
+                        <p class="text-gray-700">NO 쇼핑, NO 옵션. 쾌적한 전용 차량과 택시 이동으로 어르신들의 무릎을 아껴드립니다.</p>
+                    </div>
+                     <div class="bg-orange-50 p-6 rounded-lg border border-orange-200">
+                        <h3 class="text-xl font-bold text-orange-800 mb-3">④ 검증된 '품격'</h3>
+                        <p class="text-gray-700">5성급 시저 메트로 호텔, 딘타이펑/호텔 뷔페 등 엄선된 숙소와 식사를 제공합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <section id="highlight" class="py-16 md:py-24">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">✨ 이번 여정의 하이라이트</h2>
-                <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
-                     <div class="bg-gray-800 text-white p-8 rounded-lg shadow-xl flex flex-col">
-                        <h3 class="text-3xl font-bold mb-4 text-center">역사와 현대의 조화</h3>
-                        <p class="flex-grow mb-6">세계 4대 박물관 '국립 고궁박물원'의 핵심 유물을 여유롭게 관람하고, 타이베이의 랜드마크 '타이베이 101' 전망대에서 도시 전경을 한눈에 담습니다.</p>
-                        <div class="bg-gray-700 p-4 rounded-lg mt-auto">
-                            <h4 class="font-bold text-lg mb-2">핵심 방문지</h4>
-                            <p>국립 고궁박물원, 중정기념당, 국부기념관, 타이베이 101</p>
-                        </div>
-                    </div>
-                    <div class="bg-orange-700 text-white p-8 rounded-lg shadow-xl flex flex-col">
-                        <h3 class="text-3xl font-bold mb-4 text-center">자연, 낭만, 그리고 미식</h3>
-                        <p class="flex-grow mb-6">'예스폭진지'를 일행만을 위한 <strong>쾌적한 21인승 차량</strong>으로 편안하게 둘러보고, '단수이'의 로맨틱한 일몰을 감상합니다. '딘타이펑' 본점과 5성급 호텔 뷔페가 여행의 품격을 더합니다.</p>
-                        <div class="bg-orange-600 p-4 rounded-lg mt-auto">
-                            <h4 class="font-bold text-lg mb-2">힐링 & 미식 포인트</h4>
-                            <p>예스폭진지 (쾌적한 21인승 차량), 단수이 일몰, 딘타이펑, 시저 메트로 뷔페</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section id="timeline" class="py-16 md:py-24 bg-white">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">4박 5일 전체 일정</h2>
-                <div class="max-w-5xl mx-auto">
-                    <div class="mb-8 flex justify-center border-b">
-                        <button class="tab-btn active text-lg font-bold py-3 px-6 border-b-2" data-tab="day1">DAY 1</button>
-                        <button class="tab-btn text-lg font-bold py-3 px-6 border-b-2" data-tab="day2">DAY 2</button>
-                        <button class="tab-btn text-lg font-bold py-3 px-6 border-b-2" data-tab="day3">DAY 3</button>
-                        <button class="tab-btn text-lg font-bold py-3 px-6 border-b-2" data-tab="day4">DAY 4</button>
-                        <button class="tab-btn text-lg font-bold py-3 px-6 border-b-2" data-tab="day5">DAY 5</button>
-                    </div>
-                    <div id="tabs-content" class="p-4">
-                        </div>
-                    <p class="text-center text-sm text-gray-500 mt-8">※ 상기 일정은 현지 상황 및 어르신들의 컨디션에 따라 가장 편안한 동선으로 유연하게 운영됩니다.</p>
-                </div>
-            </div>
-        </section>
+        <section id="highlight" class="py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">✨ 이번 여정의 하이라이트</h2>
+                <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+                     <div class="bg-gray-800 text-white p-8 rounded-lg shadow-xl flex flex-col">
+                        <h3 class="text-3xl font-bold mb-4 text-center">역사와 현대의 조화</h3>
+                        <p class="flex-grow mb-6">세계 4대 박물관 '국립 고궁박물원'의 핵심 유물을 여유롭게 관람하고, 타이베이의 랜드마크 '타이베이 101' 전망대에서 도시 전경을 한눈에 담습니다.</p>
+                        <div class="bg-gray-700 p-4 rounded-lg mt-auto">
+                            <h4 class="font-bold text-lg mb-2">핵심 방문지</h4>
+                            <p>국립 고궁박물원, 중정기념당, 국부기념관, 타이베이 101</p>
+                        </div>
+                    </div>
+                    <div class="bg-orange-700 text-white p-8 rounded-lg shadow-xl flex flex-col">
+                        <h3 class="text-3xl font-bold mb-4 text-center">자연, 낭만, 그리고 미식</h3>
+                        <p class="flex-grow mb-6">'예스폭진지'를 일행만을 위한 <strong>쾌적한 21인승 차량</strong>으로 편안하게 둘러보고, '단수이'의 로맨틱한 일몰을 감상합니다. '딘타이펑' 본점과 5성급 호텔 뷔페가 여행의 품격을 더합니다.</p>
+                        <div class="bg-orange-600 p-4 rounded-lg mt-auto">
+                            <h4 class="font-bold text-lg mb-2">힐링 & 미식 포인트</h4>
+                            <p>예스폭진지 (쾌적한 21인승 차량), 단수이 일몰, 딘타이펑, 시저 메트로 뷔페</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="timeline" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">4박 5일 전체 일정</h2>
+                <div class="max-w-5xl mx-auto">
+                    <div class="mb-8 flex justify-center border-b">
+                        <button class="tab-btn active text-lg font-bold py-3 px-6 border-b-2" data-tab="day1">DAY 1</button>
+                        <button class="tab-btn text-lg font-bold py-3 px-6 border-b-2" data-tab="day2">DAY 2</button>
+                        <button class="tab-btn text-lg font-bold py-3 px-6 border-b-2" data-tab="day3">DAY 3</button>
+                        <button class="tab-btn text-lg font-bold py-3 px-6 border-b-2" data-tab="day4">DAY 4</button>
+                        <button class="tab-btn text-lg font-bold py-3 px-6 border-b-2" data-tab="day5">DAY 5</button>
+                    </div>
+                    <div id="tabs-content" class="p-4">
+                        </div>
+                    <p class="text-center text-sm text-gray-500 mt-8">※ 상기 일정은 현지 상황 및 어르신들의 컨디션에 따라 가장 편안한 동선으로 유연하게 운영됩니다.</p>
+                </div>
+            </div>
+        </section>
 
-        <section id="about-taiwan" class="py-16 md:py-24 bg-gray-50">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">여행지: 대만(타이완) 간략 정보</h2>
-                <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-                    <div class="p-6 bg-white rounded-lg shadow-md">
-                        <h3 class="text-xl font-bold text-orange-800 mb-3">날씨 및 시차</h3>
-                        <p class="text-gray-700">10월 말 타이베이는 늦가을 날씨로, 평균 20~25°C입니다. 쾌적하지만 아침저녁으로 얇은 외투가 필요합니다. 시차는 한국보다 1시간 느립니다. (한국 오전 9시 = 대만 오전 8시)</p>
-                    </div>
-                    <div class="p-6 bg-white rounded-lg shadow-md">
-                        <h3 class="text-xl font-bold text-orange-800 mb-3">언어 및 문화</h3>
-                        <p class="text-gray-700">공용어는 중국어(만다린)입니다. 호텔, 관광지는 영어가 통하지만, 대표님이 동행하시니 언어 걱정은 안 하셔도 됩니다. 매우 친절하고 치안이 좋은 나라입니다.</p>
-                    </div>
-                    <div class="p-6 bg-white rounded-lg shadow-md">
-                        <h3 class="text-xl font-bold text-orange-800 mb-3">화폐 및 환전</h3>
-                        <p class="text-gray-700">화폐 단위는 '대만 달러(TWD)' 또는 '신 타이완 달러(NTD)'입니다. 1 TWD ≈ 약 45원 (변동). 한국에서 소액만 환전하고, 현지에서 필요시 추가 환전 또는 카드를 사용하는 것이 편리합니다.</p>
-                    </div>
-                    <div class="p-6 bg-white rounded-lg shadow-md">
-                        <h3 class="text-xl font-bold text-orange-800 mb-3">전압 및 기타</h3>
-                        <p class="text-gray-700">전압은 110V (11자형 플러그)입니다. '돼지코' 또는 멀티 어댑터가 필수입니다. 물은 수돗물 대신 생수를 구입해 드시는 것을 권장합니다.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section id="checklist" class="py-16 md:py-24">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">출발 전 준비사항</h2>
-                <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-                    <div class="p-6 bg-gray-50 rounded-lg shadow-inner">
-                        <h3 class="text-2xl font-bold mb-6 text-center">✅ 필수 체크리스트</h3>
-                        <ul class="space-y-4 text-lg text-gray-700">
-                            <li><span class="mr-3">✔️</span> <strong>여권</strong> (유효기간 6개월 이상)</li>
-                            <li><span class="mr-3">✔️</span> <strong>편안한 신발</strong> (가장 중요!)</li>
-                            <li><span class="mr-3">✔️</span> <strong>개인 상비약</strong> (복용 중인 약)</li>
-                            <li><span class="mr-3">✔️</span> <strong>가벼운 외투</strong> (일교차 및 냉방 대비)</li>
-                            <li><span class="mr-3">✔️</span> <strong>신용카드</strong> (해외사용 가능) 및 대만달러(TWD) 소액</li>
-                        </ul>
-                    </div>
-                    <div class="p-6 bg-blue-50 rounded-lg shadow-inner">
-                        <h3 class="text-2xl font-bold mb-6 text-center text-blue-800">🚨 중요 안내</h3>
-                        <ul class="space-y-4 text-gray-700">
-                             <li class="flex items-start"><span class="mr-3 text-blue-600 font-bold">📢</span> <div><strong>전압 (110V):</strong> 대만은 110V(11자형)입니다. '돼지코' 또는 멀티 어댑터를 반드시 준비해주세요.</div></li>
-                             <li class="flex items-start"><span class="mr-3 text-blue-600 font-bold">📢</span> <div><strong>숙소:</strong> 5성급 '시저 메트로 타이페이'입니다. 용산사역과 연결되어 매우 편리합니다.</div></li>
-                             <li class="flex items-start"><span class="mr-3 text-blue-600 font-bold">📢</span> <div><strong>항공 (대한항공):</strong><br>
-                                 - 10/27 (월) KE187 16:10 인천 출발<br>
-                                 - 10/31 (금) KE188 19:00 타이베이 출발</div></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <section id="about-taiwan" class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">여행지: 대만(타이완) 간략 정보</h2>
+                <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                    <div class="p-6 bg-white rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold text-orange-800 mb-3">날씨 및 시차</h3>
+                        <p class="text-gray-700">10월 말 타이베이는 늦가을 날씨로, 평균 20~25°C입니다. 쾌적하지만 아침저녁으로 얇은 외투가 필요합니다. 시차는 한국보다 1시간 느립니다. (한국 오전 9시 = 대만 오전 8시)</p>
+                    </div>
+                    <div class="p-6 bg-white rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold text-orange-800 mb-3">언어 및 문화</h3>
+                        <p class="text-gray-700">공용어는 중국어(만다린)입니다. 호텔, 관광지는 영어가 통하지만, 대표님이 동행하시니 언어 걱정은 안 하셔도 됩니다. 매우 친절하고 치안이 좋은 나라입니다.</p>
+                    </div>
+                    <div class="p-6 bg-white rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold text-orange-800 mb-3">화폐 및 환전</h3>
+                        <p class="text-gray-700">화폐 단위는 '대만 달러(TWD)' 또는 '신 타이완 달러(NTD)'입니다. 1 TWD ≈ 약 45원 (변동). 한국에서 소액만 환전하고, 현지에서 필요시 추가 환전 또는 카드를 사용하는 것이 편리합니다.</p>
+                    </div>
+                    <div class="p-6 bg-white rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold text-orange-800 mb-3">전압 및 기타</h3>
+                        <p class="text-gray-700">전압은 110V (11자형 플러그)입니다. '돼지코' 또는 멀티 어댑터가 필수입니다. 물은 수돗물 대신 생수를 구입해 드시는 것을 권장합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="checklist" class="py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">출발 전 준비사항</h2>
+                <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                    <div class="p-6 bg-gray-50 rounded-lg shadow-inner">
+                        <h3 class="text-2xl font-bold mb-6 text-center">✅ 필수 체크리스트</h3>
+              _       <ul class="space-y-4 text-lg text-gray-700">
+                            <li><span class="mr-3">✔️</span> <strong>여권</strong> (유효기간 6개월 이상)</li>
+                            <li><span class="mr-3">✔️</span> <strong>편안한 신발</strong> (가장 중요!)</li>
+                            <li><span class="mr-3">✔️</span> <strong>개인 상비약</strong> (복용 중인 약)</li>
+                            <li><span class="mr-3">✔️</span> <strong>가벼운 외투</strong> (일교차 및 냉방 대비)</li>
+                            <li><span class="mr-3">✔️</span> <strong>신용카드</strong> (해외사용 가능) 및 대만달러(TWD) 소액</li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-blue-50 rounded-lg shadow-inner">
+                        <h3 class="text-2xl font-bold mb-6 text-center text-blue-800">🚨 중요 안내</h3>
+                        <ul class="space-y-4 text-gray-700">
+                             <li class="flex items-start"><span class="mr-3 text-blue-600 font-bold">📢</span> <div><strong>전압 (110V):</strong> 대만은 110V(11자형)입니다. '돼지코' 또는 멀티 어댑터를 반드시 준비해주세요.</div></li>
+                             <li class="flex items-start"><span class="mr-3 text-blue-600 font-bold">📢</span> <div><strong>숙소:</strong> 5성급 '시저 메트로 타이페이'입니다. 용산사역과 연결되어 매우 편리합니다.</div></li>
+                             <li class="flex items-start"><span class="mr-3 text-blue-600 font-bold">📢</span> <div><strong>항공 (대한항공):</strong><br>
+                                 - 10/27 (월) KE187 16:10 인천 출발<br>
+                                 - 10/31 (금) KE188 19:00 타이베이 출발</div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <section id="contact" class="py-16 md:py-24 bg-white">
-            <div class="container mx-auto px-4 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6">여러분의 든든한 동반자</h2>
-                <div class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-lg border">
+        <section id="contact" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">여러분의 든든한 동반자</h2>
+                <div class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-lg border">
+                    
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBBZkqIntftmLgAz4kTqzZdzBh3oeg1Ph1u9MUH2vLt_U4yFfl0chhwt-wYlXB1i5TiEbpM86-VkO3sru498Wd695w-rb52ZDX5Zaks871vrX0mWrtwqx4cBq-3Y10YID0S2JoujtLlN1XUb9K527vfeUwVFikkL6e4eyS66ITnRzQzAqoHV9gyy-PGUU/s320/%EC%9D%B4%EC%9E%AC%EB%AA%85(%EC%97%AC%EA%B6%8C)-%EC%98%A8%EB%9D%BC%EC%9D%B8%EC%9A%A9.jpg" 
+                         alt="이재명 대표 프로필 사진" 
+                         class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-orange-100 shadow-md">
                     <h3 class="text-2xl font-bold text-orange-700 mb-2">투어메이커 대표 이재명</h3>
-                    <p class="text-lg text-gray-600 mb-4">"여행의 시작부터 끝까지, 제 가족을 모시는 마음으로<br>가장 편안하고 안전하게 책임지겠습니다."</p>
-                    <p class="text-xl font-bold text-gray-800">비상 연락망: 010-9443-7881</p>
-                </div>
-            </div>
-        </section>
+                    <p class="text-lg text-gray-600 mb-4">"여행의 시작부터 끝까지, 제 가족을 모시는 마음으로<br>가장 편안하고 안전하게 책임지겠습니다."</p>
+                    <p class="text-xl font-bold text-gray-800">비상 연락망: 010-9443-7881</p>
+                </div>
+            </div>
+        </section>
 
-    </main>
+    </main>
 
-    <footer class="bg-gray-800 text-white text-center py-8">
-        <p>&copy; 2025 Tourmaker. All Rights Reserved.</p>
-        <p class="mt-2">세상에 없던 편안함, 투어메이커가 만듭니다.</p>
-    </footer>
+    <footer class="bg-gray-800 text-white text-center py-8">
+        <p>&copy; 2025 Tourmaker. All Rights Reserved.</p>
+        <p class="mt-2">세상에 없던 편안함, 투어메이커가 만듭니다.</p>
+    </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // 상세 일정 데이터 (대표님 PDF 기반)
-            const scheduleData = {
-                day1: {
-                    title: 'DAY 1: 도착 및 용산사의 밤',
-                    items: [
-                        { time: '14:00', desc: '인천 국제공항 집결', icon: '🛫' },
-                        { time: '16:10', desc: '인천 출발 (KE187)', icon: '✈️' },
-                        { time: '18:00', desc: '타이베이 타오위안 공항 도착', icon: '🛬' },
-                        { time: '19:00', desc: '전용 픽업 차량 탑승 후 호텔 이동', icon: '🚌' },
-                        { time: '20:00', desc: '<strong>[5성급] 시저 메트로 호텔</strong> 체크인', icon: '🏨' },
-                        { time: '20:30', desc: '저녁 식사 및 <strong>용산사(龍山寺)</strong> 야경 산책', icon: '🏛️' },
-                    ]
-                },
-                day2: {
-                    title: 'DAY 2: 역사와 낭만의 단수이',
-                    items: [
-                        { time: '09:00', desc: '호텔 조식 후 출발 (여유롭게)', icon: '🥐' },
-                        { time: '10:00', desc: '<strong>국립 고궁박물원</strong> (핵심 유물 위주 관람)', icon: '🏺' },
-                        { time: '12:30', desc: '점심 식사 (고궁정화 또는 현지식)', icon: '🍴' },
-                        { time: '14:00', desc: '<strong>스린관저</strong> (장제스 총통 관저 정원 산책)', icon: '🌳' },
-                        { time: '16:00', desc: '<strong>단수이</strong>로 이동, 강변 산책', icon: '🌅' },
-                        { time: '17:30', desc: '아름다운 <strong>단수이 일몰 감상</strong> 및 저녁 식사', icon: '🍽️' },
-                    ]
-                },
-                day3: {
-                    title: 'DAY 3: [데이투어] 예스폭진지',
-                    items: [
-                        /* [수정] '21인승' 요청 유지 */
-                        { time: '09:00', desc: '호텔 조식 후 <strong>쾌적한 21인승 전용 차량</strong> 탑승', icon: '🚌' },
-                        { time: '10:00', desc: '<strong>예류지질공원</strong> (여왕머리 바위)', icon: '🗿' },
-                        { time: '12:00', desc: '점심 식사 (현지식)', icon: '🍴' },
-                        { time: '13:30', desc: '<strong>스펀 폭포</strong> (대만 최대의 폭포)', icon: '🌊' },
-                        { time: '15:00', desc: '<strong>스펀</strong> (기찻길 천등 날리기 체험)', icon: '🏮' },
-                        { time: '16:30', desc: '<strong>지우펀</strong> (홍등 거리, 여유롭게 찻집 휴식)', icon: '🍵' },
-                        { time: '19:00', desc: '호텔 복귀 후 자유 석식 및 휴식', icon: '🏨' },
-                    ]
-                },
-                day4: {
-                    title: 'DAY 4: 타이베이 시티 & 만찬',
-                    items: [
-                        { time: '10:00', desc: '호텔 조식 후 여유롭게 출발', icon: '🥐' },
-                        { time: '10:30', desc: '<strong>중정기념당</strong> (근위병 교대식 관람)', icon: '🏛️' },
-                        { time: '12:00', desc: '점심 식사 (<strong>[특식] 딘타이펑</strong> 본점)', icon: '🥟' },
-                        { time: '14:30', desc: '<strong>타이베이 101 전망대</strong> (초고속 엘리베이터)', icon: '🏙️' },
-                        { time: '16:00', desc: '호텔 복귀 및 자유 휴식', icon: '🛌' },
-                        { time: '18:00', desc: '<strong>[환송 만찬] 시저 메트로 호텔 뷔페</strong>', icon: '🍷' },
-                    ]
-                },
-                day5: {
-                    title: 'DAY 5: 마지막 여유 & 귀국',
-                    items: [
-                        { time: '09:00', desc: '호텔 조식 후 11시 체크아웃 (짐 보관)', icon: '짐' },
-                        { time: '11:30', desc: '<strong>국부기념관</strong> (교대식 관람, 101 배경 사진)', icon: '📸' },
-                        { time: '13:00', desc: '점심 식사 (우육면 또는 백화점 식당가)', icon: '🍜' },
-                        { time: '14:30', desc: '기념품 쇼핑 (펑리수 등) 및 호텔 복귀', icon: '🛍️' },
-                        { time: '16:00', desc: '공항 샌딩 차량 탑승', icon: '🚌' },
-                        { time: '19:00', desc: '타이베이 출발 (KE188)', icon: '✈️' },
-                        { time: '22:30', desc: '인천 국제공항 도착', icon: '🛬' },
-                    ]
-                }
-            };
-            
-            const tabsContainer = document.getElementById('tabs-content');
-            const tabButtons = document.querySelectorAll('.tab-btn');
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // 상세 일정 데이터 (대표님 PDF 기반)
+            const scheduleData = {
+                day1: {
+                    title: 'DAY 1: 도착 및 용산사의 밤',
+                    items: [
+                        { time: '14:00', desc: '인천 국제공항 집결', icon: '🛫' },
+                        { time: '16:10', desc: '인천 출발 (KE187)', icon: '✈️' },
+                        { time: '18:00', desc: '타이베이 타오위안 공항 도착', icon: '🛬' },
+                        { time: '19:00', desc: '전용 픽업 차량 탑승 후 호텔 이동', icon: '🚌' },
+                        { time: '20:00', desc: '<strong>[5성급] 시저 메트로 호텔</strong> 체크인', icon: '🏨' },
+                        { time: '20:30', desc: '저녁 식사 및 <strong>용산사(龍山寺)</strong> 야경 산책', icon: '🏛️' },
+                    ]
+                },
+                day2: {
+                    title: 'DAY 2: 역사와 낭만의 단수이',
+                    items: [
+                _       { time: '09:00', desc: '호텔 조식 후 출발 (여유롭게)', icon: '🥐' },
+                        { time: '10:00', desc: '<strong>국립 고궁박물원</strong> (핵심 유물 위주 관람)', icon: '🏺' },
+                        { time: '12:30', desc: '점심 식사 (고궁정화 또는 현지식)', icon: '🍴' },
+                        { time: '14:00', desc: '<strong>스린관저</strong> (장제스 총통 관저 정원 산책)', icon: '🌳' },
+                        { time: '16:00', desc: '<strong>단수이</strong>로 이동, 강변 산책', icon: '🌅' },
+                        { time: '17:30', desc: '아름다운 <strong>단수이 일몰 감상</strong> 및 저녁 식사', icon: '🍽️' },
+A_               ]
+                },
+                day3: {
+                    title: 'DAY 3: [데이투어] 예스폭진지',
+                    items: [
+                        { time: '09:00', desc: '호텔 조식 후 <strong>쾌적한 21인승 전용 차량</strong> 탑승', icon: '🚌' },
+                        { time: '10:00', desc: '<strong>예류지질공원</strong> (여왕머리 바위)', icon: '🗿' },
+                        { time: '12:00', desc: '점심 식사 (현지식)', icon: '🍴' },
+                        { time: '13:30', desc: '<strong>스펀 폭포</strong> (대만 최대의 폭포)', icon: '🌊' },
+                        { time: '15:00', desc: '<strong>스펀</strong> (기찻길 천등 날리기 체험)', icon: '🏮' },
+                        { time: '16:30', desc: '<strong>지우펀</strong> (홍등 거리, 여유롭게 찻집 휴식)', icon: '🍵' },
+                        { time: '19:00', desc: '호텔 복귀 후 자유 석식 및 휴식', icon: '🏨' },
+                    ]
+                },
+                day4: {
+                    title: 'DAY 4: 타이베이 시티 & 만찬',
+                    items: [
+                        { time: '10:00', desc: '호텔 조식 후 여유롭게 출발', icon: '🥐' },
+                        { time: '10:30', desc: '<strong>중정기념당</strong> (근위병 교대식 관람)', icon: '🏛️' },
+                        { time: '12:00', desc: '점심 식사 (<strong>[특식] 딘타이펑</strong> 본점)', icon: '🥟' },
+                        { time: '14:30', desc: '<strong>타이베이 101 전망대</strong> (초고속 엘리베이터)', icon: '🏙️' },
+                        { time: '16:00', desc: '호텔 복귀 및 자유 휴식', icon: '🛌' },
+      .               { time: '18:00', desc: '<strong>[환송 만찬] 시저 메트로 호텔 뷔페</strong>', icon: '🍷' },
+                    ]
+                },
+                day5: {
+                    title: 'DAY 5: 마지막 여유 & 귀국',
+                    items: [
+                        { time: '09:00', desc: '호텔 조식 후 11시 체크아웃 (짐 보관)', icon: '짐' },
+                        { time: '11:30', desc: '<strong>국부기념관</strong> (교대식 관람, 101 배경 사진)', icon: '📸' },
+                        { time: '13:00', desc: '점심 식사 (우육면 또는 백화점 식당가)', icon: '🍜' },
+                        { time: '14:30', desc: '기념품 쇼핑 (펑리수 등) 및 호텔 복귀', icon: '🛍️' },
+a                     { time: '16:00', desc: '공항 샌딩 차량 탑승', icon: '🚌' },
+                        { time: '19:00', desc: '타이베이 출발 (KE188)', icon: '✈️' },
+g                     { time: '22:30', desc: '인천 국제공항 도착', icon: '🛬' },
+                    ]
+              _ }
+            };
+            
+            const tabsContainer = document.getElementById('tabs-content');
+            const tabButtons = document.querySelectorAll('.tab-btn');
 
-            function renderTabContent(day) {
-                const data = scheduleData[day];
-                let content = `<h3 class="text-2xl font-bold mb-6">${data.title}</h3><ul class="space-y-4">`;
-                data.items.forEach(item => {
-                    content += `<li class="flex items-start"><span class="text-2xl mr-4">${item.icon}</span><div><p class="font-bold">${item.time}</p><p class="text-gray-600">${item.desc}</p></div></li>`;
-                });
-                content += '</ul>';
-                tabsContainer.innerHTML = content;
-            }
+            function renderTabContent(day) {
+                const data = scheduleData[day];
+                let content = `<h3 class="text-2xl font-bold mb-6">${data.title}</h3><ul class="space-y-4">`;
+                data.items.forEach(item => {
+                    content += `<li class="flex items-start"><span class="text-2xl mr-4">${item.icon}</span><div><p class="font-bold">${item.time}</p><p class="text-gray-600">${item.desc}</p></div></li>`;
+                });
+                content += '</ul>';
+                tabsContainer.innerHTML = content;
+            }
 
-            tabButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    tabButtons.forEach(btn => btn.classList.remove('active'));
-                    button.classList.add('active');
-                    renderTabContent(button.dataset.tab);
-                });
-            });
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+t                   button.classList.add('active');
+                    renderTabContent(button.dataset.tab);
+                });
+            });
 
-            // 초기 로딩 시 Day 1 표시
-            renderTabContent('day1');
-            
-            // 네비게이션 활성화 스크립트
-            const sections = document.querySelectorAll('section');
-            const navLinks = document.querySelectorAll('.nav-link');
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        navLinks.forEach(link => {
-                            link.classList.remove('active');
-                            if (link.getAttribute('href').substring(1) === entry.target.id) {
-                                link.classList.add('active');
-                            }
-                        });
-                    }
-                });
-            }, { threshold: 0.3 });
-            sections.forEach(section => observer.observe(section));
-        });
-    </script>
+            // 초기 로딩 시 Day 1 표시
+            renderTabContent('day1');
+            
+            // 네비게이션 활성화 스크립트
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+Indentation-sensitive format.                       navLinks.forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href').substring(1) === entry.target.id) {
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            }, { threshold: 0.3 });
+            sections.forEach(section => observer.observe(section));
+A_     });
+    </script>
 </body>
 </html>
